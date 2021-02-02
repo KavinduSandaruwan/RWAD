@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider Animation</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+
+        body {
+            overflow: hidden;
+        }
+     section {
+            width: auto;
+            height: 100vh;
+            display: flex;
+         position: relative;
+         animation: slider 12s ;
+         right: 400vw;
+         animation-iteration-count: infinite;
+         animation-direction:alternate ;
+
+        }
+        img{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        @keyframes slider {
+            0%{
+                right: 300vw;
+
+            }
+            25%{
+                right: 200vw;
+
+            }
+            50%{
+                right: 100vw;
+            }
+            100%{
+                right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div><img src="css/img/31023498650_28232fc39d_b.jpg"></div>
+    <div><img src="css/img/bef0c5c806f740cfb64a041cd1dd0ce6.jpg"></div>
+    <div><img src="css/img/C9h9fsZUMAE0hPh.jpg"></div>
+    <div><img src="css/img/pexels-photo-247616.jpeg"></div>
+    <div></div>
+</section>
+
+</body>
+</html>

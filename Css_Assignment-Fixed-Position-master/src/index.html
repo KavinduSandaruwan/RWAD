@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed position</title>
+    <link href="css/normalize.css" rel="stylesheet">
+  <style>
+      body>section{
+          height: 100vh;
+          position: relative;
+
+      }
+      body>div{
+          width: 260px;
+          height: 260px;
+          border-radius: 100%;
+          border: 25px solid darkblue;
+          position: fixed;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50% , -50%);
+          z-index: 3;
+
+      }
+      div>div{
+          width: 220px;
+          height: 220px;
+          border-radius: 100%;
+          border: 25px solid #193b3a;
+          position: fixed;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50% , -50%);
+
+      }
+
+      section>div{
+          width: 230px;
+          height: 230px;
+          position:absolute;
+          border-radius: 100%;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50% , -50%);
+          padding: .25rem;
+          display: flex;
+          flex-direction: column;
+      }
+      section>div>p{
+          color: black;
+          font-weight: bolder;
+          font-family: "Arial Black";
+          text-align: center;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          font-size: 25px;
+      }
+      .circle_01{
+          background: yellow;
+      }
+      .circle_02{
+          background: #c97592;
+      }
+      .circle_03{
+          background: #86418e;
+      }
+  </style>
+</head>
+<body>
+<div>
+    <div></div>
+</div>
+
+<section>
+    <div class="circle_01">
+        <p>Hello</p>
+    </div>
+</section>
+
+<section>
+    <div class="circle_02">
+        <p>Welcome to</p>
+    </div>
+</section>
+<section>
+    <div class="circle_03">
+        <p>Institute of Software Engineering</p>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky Position</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+
+    <style>
+        body>section{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+
+        }
+        body>section:nth-child(1){
+            background:lightslategray;
+        }
+        body>section:nth-child(2){
+            background:lightblue;
+
+        }
+        body>section:nth-child(3){
+            background: lightcoral;
+        }
+        body>section:nth-child(4){
+            background: lawngreen;
+        }
+        body>section>div{
+            width: 100%;
+            height:10%;
+            position: sticky;
+            top: 0;
+            font-family: Arial ;
+            font-size: 25px;
+            color: black;
+        }
+        body>section:nth-child(1)>div{
+            background: darkblue;
+        }
+        body>section:nth-child(2)>div{
+            background: deeppink;
+        }
+        body>section:nth-child(3)>div{
+            background: firebrick;
+        }
+        body>section:nth-child(4)>div{
+            background:saddlebrown;
+        }
+        body>section>article{
+            width: max-content;
+            height: max-content;
+            font-size: 120px;
+            position: absolute;
+            color: darkslategray;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+
+<body>
+<section>
+   <article>HELLO!</article>
+    <div>Card_01</div>
+</section>
+
+<section>
+    <article>HOW</article>
+    <div>Card_02</div>
+</section>
+
+<section>
+    <article>ARE</article>
+    <div>Card_03</div>
+</section>
+
+<section>
+    <article>YOU??</article>
+    <div>Card_04</div>
+</section>
+
+
+
+</body>
+</html>
